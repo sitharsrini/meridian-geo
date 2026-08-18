@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "counts": "npx tsx -e \"import { LANDING_COUNT, BLOG_COUNT, SERVICE_COUNT, LOCATION_COUNT } from './src/lib/catalog.ts'; console.log({ SERVICE_COUNT, LOCATION_COUNT, LANDING_COUNT, BLOG_COUNT })\""
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "motion": "^13.1.0",
     "next": "16.3.1",
     "react": "19.2.8",
     "react-dom": "19.2.8"

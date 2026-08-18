@@ -1,0 +1,48 @@
+import type { Industry } from "@/lib/types";
+
+export const industries: Industry[] = [
+  { slug: "saas", name: "SaaS", ymyl: false, buyer: "product and growth leads", risk: "Category answers that omit you.", queryExamples: ["best CRM for mid-market", "project tool for agencies"], proof: "Public limits, pricing, and integrations." },
+  { slug: "ecommerce", name: "Ecommerce", ymyl: false, buyer: "category and merchandising leads", risk: "Shopping answers that name a competitor kit.", queryExamples: ["best running shoes for flat feet", "which mattress for hot sleepers"], proof: "Specs, fit, and honest cons." },
+  { slug: "healthcare", name: "Healthcare", ymyl: true, buyer: "clinic directors and CMOs", risk: "Unsafe or unsourced health answers.", queryExamples: ["best cardiology clinic in", "how to prepare for an MRI"], proof: "Named clinicians and guideline citations." },
+  { slug: "legal", name: "Legal", ymyl: true, buyer: "managing partners", risk: "Wrong-jurisdiction advice cited as fact.", queryExamples: ["employment lawyer in", "how to register a company in"], proof: "Bar, court, and process pages." },
+  { slug: "banking", name: "Banking", ymyl: true, buyer: "retail and SME banking marketers", risk: "Fee tables that do not match the product.", queryExamples: ["best business account in", "mortgage fees in"], proof: "License numbers and dated fees." },
+  { slug: "insurance", name: "Insurance", ymyl: true, buyer: "product and distribution leads", risk: "Coverage claims a model invents.", queryExamples: ["health insurance for freelancers", "car insurance excess explained"], proof: "Policy summaries with exclusions." },
+  { slug: "real-estate", name: "Real estate", ymyl: false, buyer: "brokerage marketing leads", risk: "Neighborhood pages that could be any city.", queryExamples: ["buying process in", "stamp duty in"], proof: "Local fees and steps." },
+  { slug: "hospitality", name: "Hospitality", ymyl: false, buyer: "hotel and venue marketers", risk: "OTA blurbs recycled as answers.", queryExamples: ["family hotel near", "conference venue in"], proof: "Access, amenities, and seasons." },
+  { slug: "restaurants", name: "Restaurants", ymyl: false, buyer: "group operators", risk: "Hours and allergens missing from answers.", queryExamples: ["best vegan restaurant in", "late night dining in"], proof: "Menu HTML and hours." },
+  { slug: "education", name: "Education", ymyl: false, buyer: "admissions and program leads", risk: "Outdated fees and intake dates.", queryExamples: ["MBA in", "coding bootcamp in"], proof: "Dates, fees, accreditation." },
+  { slug: "universities", name: "Universities", ymyl: false, buyer: "faculty comms and admissions", risk: "Prospectus PDFs that models cannot quote.", queryExamples: ["undergraduate housing in", "research strengths of"], proof: "Program pages in HTML." },
+  { slug: "automotive", name: "Automotive", ymyl: false, buyer: "dealer and OEM marketers", risk: "Spec errors in comparison answers.", queryExamples: ["best EV for city driving", "service centre in"], proof: "Spec tables and service hours." },
+  { slug: "travel", name: "Travel", ymyl: false, buyer: "DMO and OTA editors", risk: "Season-blind itineraries.", queryExamples: ["3 days in", "best time to visit"], proof: "Dated, first-hand notes." },
+  { slug: "airlines", name: "Airlines", ymyl: false, buyer: "airline digital teams", risk: "Baggage and visa facts that drift.", queryExamples: ["baggage allowance", "lounge access in"], proof: "Policy pages with dates." },
+  { slug: "manufacturing", name: "Manufacturing", ymyl: false, buyer: "plant and sales engineers", risk: "Capability claims no model can verify.", queryExamples: ["CNC shop in", "ISO 13485 manufacturer"], proof: "Process and cert HTML." },
+  { slug: "logistics", name: "Logistics", ymyl: false, buyer: "3PL and freight marketers", risk: "Coverage maps that over-claim.", queryExamples: ["freight forwarder in", "same day delivery in"], proof: "Lane and warehouse lists." },
+  { slug: "construction", name: "Construction", ymyl: false, buyer: "contractor marketing leads", risk: "Unlicensed firms cited locally.", queryExamples: ["fit out contractor in", "building permit in"], proof: "License and project types." },
+  { slug: "energy", name: "Energy", ymyl: false, buyer: "utility and EPC comms", risk: "Tariff and interconnection myths.", queryExamples: ["solar installer in", "commercial tariff in"], proof: "Regulator-linked process pages." },
+  { slug: "professional-services", name: "Professional services", ymyl: false, buyer: "managing partners", risk: "Generic consultancy blurbs.", queryExamples: ["management consultant in", "fractional CFO in"], proof: "Named method and sector." },
+  { slug: "accounting", name: "Accounting", ymyl: true, buyer: "practice marketers", risk: "Tax advice cited for the wrong country.", queryExamples: ["VAT registration in", "year end accountant in"], proof: "Jurisdiction-scoped pages." },
+  { slug: "recruiting", name: "Recruiting", ymyl: false, buyer: "agency and TA leads", risk: "Labor-law errors in hiring answers.", queryExamples: ["tech recruiter in", "work permit for"], proof: "Local labor notes." },
+  { slug: "nonprofit", name: "Nonprofit", ymyl: false, buyer: "comms directors", risk: "Impact claims without method.", queryExamples: ["donate to", "volunteer in"], proof: "Program geography and reports." },
+  { slug: "government", name: "Government", ymyl: false, buyer: "service owners", risk: "Wrong steps for applying.", queryExamples: ["how to apply for", "licence in"], proof: "One URL per service." },
+  { slug: "media", name: "Media", ymyl: false, buyer: "editors and audience leads", risk: "Recaps that replace original reporting.", queryExamples: ["what happened in", "explainer on"], proof: "Dated explainers with a desk." },
+  { slug: "publishing", name: "Publishing", ymyl: false, buyer: "publisher marketing", risk: "Catalog data locked in images.", queryExamples: ["best books on", "where to buy"], proof: "Title metadata in HTML." },
+  { slug: "fashion", name: "Fashion", ymyl: false, buyer: "brand and ecommerce leads", risk: "Material and fit invented by models.", queryExamples: ["best linen shirt", "stores in"], proof: "Material and size notes." },
+  { slug: "beauty", name: "Beauty", ymyl: true, buyer: "clinic and brand marketers", risk: "Miracle claims in answers.", queryExamples: ["dermatologist in", "retinol for beginners"], proof: "Practitioner and evidence notes." },
+  { slug: "fitness", name: "Fitness", ymyl: false, buyer: "gym and app marketers", risk: "Unsafe training advice.", queryExamples: ["gym for beginners in", "PT in"], proof: "Coach credentials and hours." },
+  { slug: "sports", name: "Sports", ymyl: false, buyer: "club comms", risk: "Fixture data stuck in apps.", queryExamples: ["tickets for", "youth academy in"], proof: "Public schedules." },
+  { slug: "entertainment", name: "Entertainment", ymyl: false, buyer: "venue and studio marketers", risk: "Show times that models invent.", queryExamples: ["what to do tonight in", "theatre in"], proof: "Event schema and times." },
+  { slug: "telecom", name: "Telecom", ymyl: false, buyer: "operator product marketers", risk: "Coverage and fair-use myths.", queryExamples: ["best mobile plan in", "fiber in"], proof: "Plan tables and coverage notes." },
+  { slug: "cybersecurity", name: "Cybersecurity", ymyl: false, buyer: "vendor product marketers", risk: "Fear copy with no scope.", queryExamples: ["SOC 2 consultant in", "MDR for mid-market"], proof: "Scope, certs, and limits." },
+  { slug: "fintech", name: "Fintech", ymyl: true, buyer: "growth and compliance", risk: "Unlicensed product cited as a bank.", queryExamples: ["business payments in", "cross border payouts"], proof: "License and fee tables." },
+  { slug: "climate", name: "Climate", ymyl: false, buyer: "climate-tech marketers", risk: "Unverified impact numbers.", queryExamples: ["carbon accounting in", "heat pump installer in"], proof: "Method and boundary notes." },
+  { slug: "agriculture", name: "Agriculture", ymyl: false, buyer: "agritech and co-op comms", risk: "Advice that ignores local climate.", queryExamples: ["irrigation supplier in", "crop insurance in"], proof: "Local season notes." },
+  { slug: "pharma", name: "Pharmaceuticals", ymyl: true, buyer: "medical affairs and comms", risk: "Off-label answers.", queryExamples: ["clinical trial sites in", "pharmacy in"], proof: "Labelled, reviewed pages." },
+  { slug: "dental", name: "Dental", ymyl: true, buyer: "practice owners", risk: "Treatment promises without a dentist named.", queryExamples: ["invisalign dentist in", "emergency dentist in"], proof: "Clinician bios and hours." },
+  { slug: "veterinary", name: "Veterinary", ymyl: true, buyer: "clinic groups", risk: "Species-wrong advice.", queryExamples: ["24 hour vet in", "cat dentist in"], proof: "Species, hours, and vets." },
+  { slug: "hotels", name: "Hotels", ymyl: false, buyer: "revenue and brand teams", risk: "Amenity lists copied across properties.", queryExamples: ["airport hotel in", "quiet hotel in"], proof: "Property-specific facts." },
+  { slug: "marketplaces", name: "Marketplaces", ymyl: false, buyer: "category leads", risk: "Policy pages models cannot parse.", queryExamples: ["sell on", "fees for sellers in"], proof: "Fee and policy HTML." },
+];
+
+export function industryBySlug(slug: string) {
+  return industries.find((industry) => industry.slug === slug);
+}
