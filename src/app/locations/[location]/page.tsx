@@ -11,7 +11,7 @@ import { imageFor } from "@/lib/hash";
 import { faqNode, organizationNode } from "@/lib/seo/schema";
 import { site } from "@/lib/site";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return locations.map((location) => ({ location: location.slug }));

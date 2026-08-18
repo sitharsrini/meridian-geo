@@ -6,7 +6,7 @@ import { industries, topicBySlug, topics, blogLocations } from "@/lib/catalog";
 import { clipMeta } from "@/lib/seo/meta";
 import { imageFor } from "@/lib/hash";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return topics.map((topic) => ({ topic: topic.slug }));

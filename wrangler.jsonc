@@ -8,7 +8,22 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS",
   },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "meridian-geo",
+    },
+  ],
+  "r2_buckets": [
+    {
+      "binding": "NEXT_INC_CACHE_R2_BUCKET",
+      "bucket_name": "meridian-geo-cache",
+    },
+  ],
   "observability": {
     "enabled": true,
+  },
+  "vars": {
+    "NEXT_PUBLIC_SITE_URL": "https://meridian-geo.rsrini163.workers.dev",
   },
 }

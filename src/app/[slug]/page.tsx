@@ -13,7 +13,7 @@ import { faqNode, organizationNode } from "@/lib/seo/schema";
 import { site } from "@/lib/site";
 import { sideStock, stockForCluster, STOCK } from "@/lib/stock";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return commercialPages.map((page) => ({ slug: page.slug }));

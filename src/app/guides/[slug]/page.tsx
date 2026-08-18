@@ -13,7 +13,7 @@ import { reviewer } from "@/lib/catalog";
 import { site } from "@/lib/site";
 import { stockForGuide } from "@/lib/stock";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return guides.map((guide) => ({ slug: guide.slug }));

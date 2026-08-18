@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { authorBySlug, authors, topics } from "@/lib/catalog";
 import { clipMeta } from "@/lib/seo/meta";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return authors.map((author) => ({ slug: author.slug }));

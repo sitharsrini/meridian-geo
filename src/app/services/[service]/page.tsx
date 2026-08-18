@@ -11,7 +11,7 @@ import { faqNode, organizationNode } from "@/lib/seo/schema";
 import { site } from "@/lib/site";
 import { stockForFamily } from "@/lib/stock";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return services.map((service) => ({ service: service.slug }));

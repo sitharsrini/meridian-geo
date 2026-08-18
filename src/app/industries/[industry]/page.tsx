@@ -10,7 +10,7 @@ import { faqNode, organizationNode } from "@/lib/seo/schema";
 import { site } from "@/lib/site";
 import { imageFor } from "@/lib/hash";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return industries.map((industry) => ({ industry: industry.slug }));
