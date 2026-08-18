@@ -38,16 +38,20 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, error: "Missing required fields" }, { status: 400 });
   }
 
-  const dir = path.join(process.cwd(), "data");
-  const file = path.join(dir, "leads.json");
-  await mkdir(dir, { recursive: true });
-  let existing: Lead[] = [];
   try {
-    existing = JSON.parse(await readFile(file, "utf8")) as Lead[];
+    const dir = path.join(process.cwd(), "data");
+    const file = path.join(dir, "leads.json");
+    await mkdir(dir, { recursive: true });
+    let existing: Lead[] = [];
+    try {
+      existing = JSON.parse(await readFile(file, "utf8")) as Lead[];
+    } catch {
+      existing = [];
+    }
+    existing.push(lead);
+    await writeFile(file, JSON.stringify(existing, null, 2));
   } catch {
-    existing = [];
+    console.log("lead", lead);
   }
-  existing.push(lead);
-  await writeFile(file, JSON.stringify(existing, null, 2));
   return NextResponse.json({ ok: true });
 }

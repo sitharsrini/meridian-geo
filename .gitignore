@@ -38,6 +38,11 @@ data/leads.json
 # vercel
 .vercel
 
+# cloudflare / opennext
+.open-next
+.wrangler
+.dev.vars
+
 # local agent notes
 .agents/
 
